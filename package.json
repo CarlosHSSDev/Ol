@@ -4,8 +4,9 @@
   "description": "",
   "main": "bot_2_0.js",
   "scripts": {
-    "start": "node bot_2_0.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "install-dependencies": "apt-get update && apt-get install -y libnss3",
+  "start": "npm run install-dependencies && node bot_2_0.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
